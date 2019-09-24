@@ -1,5 +1,6 @@
 import numpy as np
 
+
 # Information Gain function
 def Information_Gain(S, branches):
     # S: float
