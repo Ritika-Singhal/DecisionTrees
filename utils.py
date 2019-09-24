@@ -1,7 +1,6 @@
 import numpy as np
 
-
-# TODO: Information Gain function
+# Information Gain function
 def Information_Gain(S, branches):
     # S: float
     # branches: List[List[int]] num_branches * num_cls
@@ -18,7 +17,7 @@ def Information_Gain(S, branches):
     return S-conditional_entropy
         
 
-# TODO: implement reduced error prunning function, pruning your tree on this function
+# Implemented reduced error prunning function
 def reduced_error_prunning(decisionTree, X_test, y_test):
     # decisionTree
     # X_test: List[List[any]]
