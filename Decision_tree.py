@@ -53,7 +53,7 @@ class TreeNode(object):
 
         self.feature_uniq_split = None  # the possible unique values of the feature to be split
 
-    #TODO: try to split current node
+    # Split current node
     def split(self):
         feature_information_gains = []
         unique_labels, unique_label_count = np.unique(self.labels, return_counts=True)
@@ -98,7 +98,7 @@ class TreeNode(object):
                 if new_child.splittable:
                     new_child.split()
         
-    # TODO: predict the branch or the class
+    # Predict the branch or the class
     def predict(self, feature):
         # feature: List[any]
         # return: int≥
